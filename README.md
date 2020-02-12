@@ -7,4 +7,4 @@ A simple shell script to apply pipeline employ jackhmmer protein search and eggN
 
 #USAGE
 
-PcGs_finder.sh output_dir iteration# query.fasta KOGID pfm_database
+PcGs_finder.sh output_dir iteration# query.fasta KOGID pfm_database_path eggnog_database_path
