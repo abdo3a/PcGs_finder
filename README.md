@@ -1,8 +1,8 @@
 # PcGs-finder
-protein homologous finder
+Polycomb-group proteins (PcGs) homologous finder
 
 
-A simple shell script to apply pipeline employ jackhmmer protein search and eggNOG mapper to find a robust protein homologous within a big protein database. Finally, the selected protein screened for the domain architecture using hmmerscan. All results reported in a tab-delimited file.
+A python script to apply pipeline employ jackhmmer protein search and eggNOG mapper to find a robust protein homologous within a big protein database. Finally, the selected protein screened for the domain architecture using hmmerscan. All results reported in a tab-delimited file.
 
 
 #USAGE
