@@ -1,5 +1,5 @@
 # PcGs-finder
-Polycomb-group proteins (PcGs) homologous finder
+A computational pipeline to identify Polycomb-group proteins (PcGs) homologous.
 
 
 A python script to apply pipeline employ jackhmmer protein search and eggNOG mapper to find a robust protein homologous within a big protein database. Finally, the selected protein screened for the domain architecture using hmmerscan. All results reported in a tab-delimited file.
@@ -11,7 +11,7 @@ A python script to apply pipeline employ jackhmmer protein search and eggNOG map
 
 #requirments
 
-- PcGs-finder needs to download the domain data base (GB) and eggnog database(). to avoid downloading the databases everytime you using the pipline we recommend to use the same outfolder which the databases were downloaded for the first time.
+- PcGs-finder needs to download the domain data base (3.0 GB) and eggnog database(37.0 GB). to avoid downloading the databases everytime you using the pipline we recommend to use the same outfolder which the databases were downloaded for the first time.
 
 - PcGs-finder uses python => 3 and the following librieries must be avaliable in your system.
 1- pip3 install os-sys
