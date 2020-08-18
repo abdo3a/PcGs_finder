@@ -1,4 +1,4 @@
-# PcGs_finder
+# PcGs-finder
 protein homologous finder
 
 
