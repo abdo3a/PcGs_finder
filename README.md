@@ -3,7 +3,7 @@
 
 
 
-PcGs-finder
+PolycombGroup(PcG)-finder
 
 
 Overview
