@@ -14,4 +14,4 @@ The article is still in preparation.
 
  A visual overview of the major steps in PcG-finder is shown below:
 
-![](images/flowchart.png)
+![](images/Flowchart.png)
