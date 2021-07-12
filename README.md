@@ -1,9 +1,10 @@
 <img src="images/logo.png" width=200>
+
 # PolycombGroup(PcG)-finder
 
 
 
-Overview
+### Overview
 
 PcG-finder is a computational pipeline to identify Polycomb-group (PcG) proteins  homologous in eukaryotes. PcG-finder can be run using any set of sequence data, as long as sequences are in fasta format. PcG-finder is a python script to apply pipeline employs hmmer (jackhmmer) protein search and eggNOG mapper to find a robust protein homologous within a big protein database. Finally, the selected protein searched for the domain architecture using hmmerscan. All results will be reported in a tab-delimited file.
 
@@ -19,7 +20,7 @@ The article is still in preparation.
 
 ![](images/Flowchart.png)
 
-Installation
+## Installation
 PcG-finder is written in Python (compatible with 3.0 or more). The required dependencies will be downloaded and executed during the installation of PcG-finder as a Python package or library. PcG-finder directory must be used as a working directory, then the input file(s) must be transferred to the PcG-finder directory but the output folder can be elsewhere. PcG-finder requires a 40 GB free-space to download the necessary databases. There are only two external dependencies that should be installed before using PcGs-finder:
 
     • HMMER: biosequence analysis using profile hidden Markov model.
@@ -35,14 +36,14 @@ PcG-finder scripts can be run using Mac OSX (10.10+) and Linux, and can also wor
 OR
 python3 setup.py
 
-Usage
+### Usage
 PcG-finder can be run using following command:
 
 ./PcGs_finder.py [-h] -i INFILE -pg PCG -o OUTFOLDER [-t THREADS] (it's 10 by default) 
 
 PcG-finder can be tested for the first time through the available test data (Athaliana.fasta; the total predicted protein of Arabidopsis thaliana).
 
-Examples commands:
+### Examples commands:
 
 for E(z) sub-unit:
 ./PcGs_finder.py -i Athaliana.fasta -pg ezh -o TEST 
