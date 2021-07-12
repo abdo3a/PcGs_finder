@@ -1,4 +1,4 @@
-![](images/logo.png)
+<img src="images/logo.png" width=200>
 PolycombGroup(PcG)-finder
 
 Overview
@@ -15,3 +15,40 @@ The article is still in preparation.
  A visual overview of the major steps in PcG-finder is shown below:
 
 ![](images/Flowchart.png)
+
+Installation
+PcG-finder is written in Python (compatible with 3.0 or more). The required dependencies will be downloaded and executed during the installation of PcG-finder as a Python package or library. PcG-finder directory must be used as a working directory, then the input file(s) must be transferred to the PcG-finder directory but the output folder can be elsewhere. PcG-finder requires a 40 GB free-space to download the necessary databases. There are only two external dependencies that should be installed before using PcGs-finder:
+
+    • HMMER: biosequence analysis using profile hidden Markov model.
+http://hmmer.org 
+    • eggnog-mapper.
+ https://github.com/eggnogdb/eggnog-mapper 
+
+Helpful installation instructions for these dependencies can be found on the previous links. 
+
+PcG-finder scripts can be run using Mac OSX (10.10+) and Linux, and can also work with Windows using a program like Cygwin. PcG-finder can install using the following command:
+
+./setup.py 
+OR
+python3 setup.py
+
+Usage
+PcG-finder can be run using following command:
+
+./PcGs_finder.py [-h] -i INFILE -pg PCG -o OUTFOLDER [-t THREADS] (it's 10 by default) 
+
+PcG-finder can be tested for the first time through the available test data (Athaliana.fasta; the total predicted protein of Arabidopsis thaliana).
+
+Examples commands:
+
+for E(z) sub-unit:
+./PcGs_finder.py -i Athaliana.fasta -pg ezh -o TEST 
+
+for Su(z)12 sub-unit:
+./PcGs_finder.py -i Athaliana.fasta -pg suz12 -o TEST 
+
+for ESC sub-unit:
+./PcGs_finder.py -i Athaliana.fasta -pg esc -o TEST     
+
+for NURF55 sub-unit:
+./PcGs_finder.py -i Athaliana.fasta -pg p55 -o TEST 
