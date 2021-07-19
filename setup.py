@@ -21,11 +21,5 @@ if not os.path.exists(os.path.join(db_path, 'Pf_Sm.h3i')):
 else:
     print ('Pf_Sm exists')
 
-if not os.path.exists(os.path.join(db_path, 'eggnog.db')):
-    os.system('wget -v http://eggnog5.embl.de/download/emapperdb-5.0.0/eggnog.db.gz -P %s' % (db_path))
-    os.system('gunzip %seggnog.db.gz' % (db_path))
-    print ('eggnog database downloaded')
-else:
-    print ('eggnog database exist')
 
 print ('PcGs-finder is ready to use')
